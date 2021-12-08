@@ -1,4 +1,4 @@
-package com.cognizant.java8Features.StreamsPgm;
+package com.cognizant.java8Features.modelClass;
 
 public class StudentInfo {
     private int RegisterNo;

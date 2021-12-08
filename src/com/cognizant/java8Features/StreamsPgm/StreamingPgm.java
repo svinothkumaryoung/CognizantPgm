@@ -1,5 +1,8 @@
 package com.cognizant.java8Features.StreamsPgm;
 
+import com.cognizant.java8Features.DataAccessLayer.DataLayer;
+import com.cognizant.java8Features.modelClass.StudentInfo;
+
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -9,7 +12,7 @@ public class StreamingPgm {
     static Predicate<StudentInfo> si2=(studentInfo)->studentInfo.getName().equals("Vinothkumar");
 
     public static void main(String[] args) {
-        List<StudentInfo> si=DataLayer.getStudentDetails()
+        List<StudentInfo> si= DataLayer.getStudentDetails()
                 .stream()
                 .filter(si1)
                 .filter(si2)
